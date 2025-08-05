@@ -26,7 +26,7 @@
 		url += "&" + encodeURIComponent("Price") + "=" + encodeURIComponent(document.MainForm.price.value);
 		url += "&" + encodeURIComponent("Barcode") + "=" + encodeURIComponent(document.MainForm.barcode.value);
 		url += "&" + encodeURIComponent("(発行枚数)") + "=" + encodeURIComponent(document.MainForm.quantity.value); // 入力項目へのデータセット
-		url += "&__success_redirect_url=" + encodeURIComponent(dir_path + "/SmaPriSample_OK.html"); // OK時戻り先
+		url += "&__success_redirect_url=" + encodeURIComponent(dir_path + "/SmaPriSample.html"); // OK時戻り先
 		url += "&__failure_redirect_url=" + encodeURIComponent(dir_path + "/SmaPriSample_NG.html"); // NG時戻り先
 
 		location.href = url;
@@ -44,5 +44,6 @@
 		<p><input type="button" value="  Print  " onclick="requestOutput()"></p>
 	</form>
 </body>
+
 
 </html>
