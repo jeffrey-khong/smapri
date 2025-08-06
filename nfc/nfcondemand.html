@@ -29,7 +29,7 @@
       url = 'http://localhost:8080/Format/Print?'
         + '__format_archive_url' + '=' + encodeURIComponent(dir + '/' + 'sample.spfmtz')
         + '&' + '__format_id_number=1'
-        + '&' + '__format_archive_update=NoUpdate'
+        + '&' + '__format_archive_update=updateWithoutError'
         + '&' + encodeURIComponent('製品名') + '=' + document.getElementById('item').value
         + '&' + encodeURIComponent('サイズ') + '=' + document.getElementById('size').value
         + '&' + encodeURIComponent('ロットNo.') + '=' + document.getElementById('lot').value
@@ -97,5 +97,6 @@
 
 
 </html>
+
 
 
