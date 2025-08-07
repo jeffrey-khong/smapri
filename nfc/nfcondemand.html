@@ -33,7 +33,7 @@
         + '&' + encodeURIComponent('Product Name') + '=' + document.getElementById('item').value
         + '&' + encodeURIComponent('Size') + '=' + document.getElementById('size').value
         + '&' + encodeURIComponent('Lot No.') + '=' + document.getElementById('lot').value
-        + '&' + encodeURIComponent('(発行枚数)') + '=' + document.getElementById('qty').value;
+        + '&' + encodeURIComponent('(Print quantity)') + '=' + document.getElementById('qty').value;
       [result, responseBody] = await HttpRequest(url); // リクエスト送信
       if (result != 'OK') {
         return;
@@ -97,6 +97,7 @@
 
 
 </html>
+
 
 
 
