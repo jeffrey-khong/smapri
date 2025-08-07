@@ -30,9 +30,9 @@
         + '__format_archive_url' + '=' + encodeURIComponent(dir + '/' + 'PW4NX_sample.spfmtz')
         + '&' + '__format_id_number=1'
         + '&' + '__format_archive_update=update'
-        + '&' + encodeURIComponent('製品名') + '=' + document.getElementById('item').value
-        + '&' + encodeURIComponent('サイズ') + '=' + document.getElementById('size').value
-        + '&' + encodeURIComponent('ロットNo.') + '=' + document.getElementById('lot').value
+        + '&' + encodeURIComponent('Product Name') + '=' + document.getElementById('item').value
+        + '&' + encodeURIComponent('Size') + '=' + document.getElementById('size').value
+        + '&' + encodeURIComponent('Lot No.') + '=' + document.getElementById('lot').value
         + '&' + encodeURIComponent('(発行枚数)') + '=' + document.getElementById('qty').value;
       [result, responseBody] = await HttpRequest(url); // リクエスト送信
       if (result != 'OK') {
@@ -86,9 +86,9 @@
   <h1>NFCオンデマンド印刷</h1>
   <p><input type="button" onclick="SetPort()" value="NFCオンデマンド印刷に切替"></p>
   <hr>
-  <p>製品名:<input type="text" id="item" maxlength="10" value="小ネジ"></p>
-  <p>サイズ:<input type="text" id="size" maxlength="6" value="30x10"></p>
-  <p>ロットNo.:<input type="text" id="lot" maxlength="6" value="000001"></p>
+  <p>Product Name:<input type="text" id="item" maxlength="10" value="小ネジ"></p>
+  <p>Size:<input type="text" id="size" maxlength="6" value="30x10"></p>
+  <p>Lot No.:<input type="text" id="lot" maxlength="6" value="000001"></p>
   <p>発行枚数:<input type="number" id="qty" maxlength="4" value="1"></p>
   <p><input type="button" onclick="NfcOndemandPrint()" value="ラベル発行"><br></p>
   <hr>
@@ -97,6 +97,7 @@
 
 
 </html>
+
 
 
 
