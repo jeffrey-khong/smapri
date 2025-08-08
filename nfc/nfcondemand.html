@@ -32,7 +32,7 @@
         + '&' + '__format_archive_update=update'
         + '&' + encodeURIComponent('製品名') + '=' + document.getElementById('item').value
         + '&' + encodeURIComponent('Size') + '=' + document.getElementById('size').value
-        + '&' + encodeURIComponent('ロットNo.') + '=' + document.getElementById('lot').value
+        + '&' + encodeURIComponent('Lot No.') + '=' + document.getElementById('lot').value
         + '&' + encodeURIComponent('(Print quantity)') + '=' + document.getElementById('qty').value;
       [result, responseBody] = await HttpRequest(url); // リクエスト送信
       if (result != 'OK') {
@@ -97,6 +97,7 @@
 
 
 </html>
+
 
 
 
